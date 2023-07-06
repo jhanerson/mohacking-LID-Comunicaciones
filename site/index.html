@@ -16,7 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 </head>
 
-<body class="no-scroll">
+<body class="no-scroll" >
     <div class="centrado" id="onload">
         <div class="lds-ripple">
             <div></div>
@@ -24,87 +24,44 @@
         </div>
     </div>
 
-
-    <div class="card-group">
-        <div class="card">
-            <div class="img-a-1">
-                <h2>Agregar venta</h2>
-            </div>
-            <form id="ventaForm">
-                <div class="form-group">
-                    <label for="producto">Producto:</label>
-                    <input type="text" class="form-control" id="producto" required>
-                </div>
-                <div class="form-group">
-                    <label for="cantidad">Cantidad:</label>
-                    <input type="number" class="form-control" id="cantidad" required>
-                </div>
-                <div class="form-group">
-                    <label for="precio">Precio:</label>
-                    <input type="number" class="form-control" id="precio" required>
-                </div>
-                <hr>
-                <button type="submit" class="btn btn-primary" onclick="guardarVenta()">Guardar</button>
-                <button type="button" class="btn btn-primary" onclick="exportarExcel()">Exportar a
-                    Excel</button>
-                <hr>
-            </form>
-            <h2>Tabla de ventas</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Cantidad</th>
-                        <th>Precio</th>
-                        <th>Total</th>
-                        <th>Fecha</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Aquí irían las filas de la tabla generadas dinámicamente -->
-                </tbody>
-            </table>
-            <div class="card">
-                <div class="img-a-1">
-                    <h2>Agregar Gasto</h2>
-                </div>
-                <form id="ventaForm">
-                    <div class="form-group">
-                        <label for="producto">Producto:</label>
-                        <input type="text" class="form-control" id="producto" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cantidad">Cantidad:</label>
-                        <input type="number" class="form-control" id="cantidad" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="precio">Precio:</label>
-                        <input type="number" class="form-control" id="precio" required>
-                    </div>
-                    <hr>
-                    <button type="submit" class="btn btn-primary" onclick="guardarVenta()">Guardar</button>
-                    <button type="button" class="btn btn-primary" onclick="exportarExcel()">Exportar a
-                        Excel</button>
-                    <hr>
-                </form>
-                <h2>Gastos</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Cantidad</th>
-                            <th>Precio</th>
-                            <th>Total</th>
-                            <th>Fecha</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Aquí irían las filas de la tabla generadas dinámicamente -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="img-a-1">
+        <h2>Agregar venta</h2>
     </div>
+    <form id="ventaForm">
+        <div class="form-group">
+            <label for="producto">Producto:</label>
+            <input type="text" class="form-control" id="producto" required>
+        </div>
+        <div class="form-group">
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" class="form-control" id="cantidad" required>
+        </div>
+        <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="number" class="form-control" id="precio" required>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-primary" onclick="guardarVenta()">Guardar</button>
+        <button type="button" class="btn btn-primary" onclick="exportarExcel()">Exportar a
+            Excel</button>
+        <hr>
+    </form>
+    <h2>Tabla de ventas</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Total</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aquí irían las filas de la tabla generadas dinámicamente -->
+        </tbody>
+    </table>
+<hr>
 
     <script src="code.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
