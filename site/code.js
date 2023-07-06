@@ -97,3 +97,26 @@ window.addEventListener('load', function () {
         });
     });
 });
+
+
+// Función para guardar una venta
+function guardarVenta() {
+    // Aquí iría tu lógica para guardar la venta en la base de datos o hacer lo que necesites
+}
+
+// Función para exportar la tabla a Excel
+function exportarExcel() {
+    // Obtiene los datos de la tabla
+    const tabla = document.querySelector('.table');
+    const datos = tabla.outerHTML;
+
+    // Crea un libro de Excel
+    const wb = XLSX.utils.book_new();
+    const ws = XLSX.utils.table_to_sheet(tabla);
+
+    // Agrega la hoja al libro de Excel
+    XLSX.utils.book_append_sheet(wb, ws, 'Tabla de ventas');
+
+    // Guarda el libro de Excel como un archivo
+    XLSX.writeFile(wb, 'ventas.xlsx');
+}
