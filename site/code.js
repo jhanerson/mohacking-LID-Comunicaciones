@@ -120,3 +120,6 @@ function exportarExcel() {
     // Guarda el libro de Excel como un archivo
     XLSX.writeFile(wb, 'ventas.xlsx');
 }
+
+
+

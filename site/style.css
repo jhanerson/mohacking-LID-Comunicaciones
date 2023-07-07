@@ -9,6 +9,10 @@
     max-width: 60rem;
 }
 
+body{
+margin-left: 5%;
+margin-right: 5%;
+}
 .container {
     max-width: 24%;
     margin: 0 auto;
